@@ -64,5 +64,6 @@ else {
 request.write(jsonData);
 request.end();
 });
-
+//process.env.PORT make the port dynamic which allows the server to use any post which ever is on their local server
+// || 3000 add this and defining the port we can use the app localy as well
 app.listen(process.env.PORT || 3000);
